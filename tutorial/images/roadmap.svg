@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 560" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="820" height="560" fill="#f8fafc"/>
+  <text x="40" y="50" font-size="26" font-weight="800" fill="#1d3b5a">第 13 章 · 从入门到精通的学习路线图</text>
+  <text x="40" y="80" font-size="14" fill="#555">按顺序打怪升级，每过一关就动手写一个小项目。</text>
+
+  <!-- level 1 -->
+  <g transform="translate(40,110)">
+    <rect x="0" y="0" width="740" height="80" rx="12" fill="#e7f5ff" stroke="#a5d8ff"/>
+    <circle cx="40" cy="40" r="22" fill="#1c7ed6"/>
+    <text x="40" y="46" font-size="18" font-weight="800" fill="#fff" text-anchor="middle">1</text>
+    <text x="80" y="32" font-size="16" font-weight="700" fill="#1d3b5a">入门：语法与基础</text>
+    <text x="80" y="58" font-size="13" fill="#495057">变量、数据类型、控制流、函数 —— 能写 50 行内的小程序</text>
+    <text x="80" y="76" font-size="12" fill="#868e96">🎯 项目：计算器 / 猜数字游戏</text>
+  </g>
+  <!-- level 2 -->
+  <g transform="translate(40,200)">
+    <rect x="0" y="0" width="740" height="80" rx="12" fill="#ebfbee" stroke="#b2f2bb"/>
+    <circle cx="40" cy="40" r="22" fill="#2f9e44"/>
+    <text x="40" y="46" font-size="18" font-weight="800" fill="#fff" text-anchor="middle">2</text>
+    <text x="80" y="32" font-size="16" font-weight="700" fill="#1d3b5a">进阶：组织与复用</text>
+    <text x="80" y="58" font-size="13" fill="#495057">面向对象、模块与包、文件操作、异常处理</text>
+    <text x="80" y="76" font-size="12" fill="#868e96">🎯 项目：通讯录管理 / 待办清单（含文件存储）</text>
+  </g>
+  <!-- level 3 -->
+  <g transform="translate(40,290)">
+    <rect x="0" y="0" width="740" height="80" rx="12" fill="#fff4e6" stroke="#ffd8a8"/>
+    <circle cx="40" cy="40" r="22" fill="#e8590c"/>
+    <text x="40" y="46" font-size="18" font-weight="800" fill="#fff" text-anchor="middle">3</text>
+    <text x="80" y="32" font-size="16" font-weight="700" fill="#1d3b5a">熟练：标准库与生态</text>
+    <text x="80" y="58" font-size="13" fill="#495057">常用标准库、第三方包管理(pip)、虚拟环境、单元测试</text>
+    <text x="80" y="76" font-size="12" fill="#868e96">🎯 项目：批量文件重命名 / 简易爬虫</text>
+  </g>
+  <!-- level 4 -->
+  <g transform="translate(40,380)">
+    <rect x="0" y="0" width="740" height="80" rx="12" fill="#f3f0ff" stroke="#d0bfff"/>
+    <circle cx="40" cy="40" r="22" fill="#6741d9"/>
+    <text x="40" y="46" font-size="18" font-weight="800" fill="#fff" text-anchor="middle">4</text>
+    <text x="80" y="32" font-size="16" font-weight="700" fill="#1d3b5a">精通：工程化与方向深耕</text>
+    <text x="80" y="58" font-size="13" fill="#495057">代码规范、调试、性能优化、设计模式、Git 协作</text>
+    <text x="80" y="76" font-size="12" fill="#868e96">🎯 项目：Web 应用 / 数据分析报告 / 开源贡献</text>
+  </g>
+  <!-- level 5 -->
+  <g transform="translate(40,470)">
+    <rect x="0" y="0" width="740" height="70" rx="12" fill="#1d3b5a"/>
+    <circle cx="40" cy="35" r="22" fill="#ffd43b"/>
+    <text x="40" y="41" font-size="16" font-weight="800" fill="#1d3b5a" text-anchor="middle">★</text>
+    <text x="80" y="30" font-size="16" font-weight="700" fill="#fff">专家：选定方向持续深耕</text>
+    <text x="80" y="54" font-size="13" fill="#cfe3f5">Web / 数据 / AI / 自动化 —— 读源码、写轮子、教别人</text>
+  </g>
+</svg>

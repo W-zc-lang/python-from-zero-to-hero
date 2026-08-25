@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="820" height="440" fill="#f8fafc"/>
+  <text x="40" y="50" font-size="26" font-weight="800" fill="#1d3b5a">浅拷贝 vs 深拷贝：嵌套结构才见真章</text>
+  <text x="40" y="80" font-size="14" fill="#555">对"只有一层"的列表，二者结果看起来一样；但当列表里还套着列表时，差别立刻显现。</text>
+
+  <!-- 浅拷贝 -->
+  <g transform="translate(40,120)">
+    <text x="0" y="0" font-size="17" font-weight="700" fill="#1c7ed6">① 浅拷贝 copy.copy()</text>
+    <rect x="0" y="20" width="130" height="50" rx="8" fill="#ffffff" stroke="#3776ab" stroke-width="2"/>
+    <text x="14" y="50" font-size="13" fill="#1d3b5a">a = [1, [2,3]]</text>
+    <path d="M65,70 L65,92" stroke="#adb5bd" stroke-width="2" marker-end="url(#ar)"/>
+    <text x="80" y="100" font-size="13" fill="#495057">b = a.copy()（拷贝外壳）</text>
+    <!-- 两个外壳指向同一个内层 -->
+    <rect x="0" y="110" width="120" height="46" rx="8" fill="#e7f5ff" stroke="#1c7ed6"/>
+    <text x="14" y="138" font-size="12" fill="#1d3b5a">外壳 a</text>
+    <rect x="160" y="110" width="120" height="46" rx="8" fill="#e7f5ff" stroke="#1c7ed6"/>
+    <text x="174" y="138" font-size="12" fill="#1d3b5a">外壳 b</text>
+    <rect x="80" y="180" width="120" height="46" rx="8" fill="#ffe3e3" stroke="#ff6b6b"/>
+    <text x="92" y="208" font-size="12" fill="#c92a2a">内层 [2,3]</text>
+    <path d="M60,133 L80,203" stroke="#e03131" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+    <path d="M220,133 L200,203" stroke="#e03131" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+    <text x="0" y="270" font-size="13" fill="#c92a2a" font-weight="700">⚠ b[1][0]=99 → a 也变成 99！</text>
+    <text x="0" y="292" font-size="13" fill="#495057">因为 a、b 共用了同一个内层列表。</text>
+  </g>
+
+  <!-- 深拷贝 -->
+  <g transform="translate(420,120)">
+    <text x="0" y="0" font-size="17" font-weight="700" fill="#2f9e44">② 深拷贝 copy.deepcopy()</text>
+    <rect x="0" y="20" width="130" height="50" rx="8" fill="#ffffff" stroke="#2f9e44" stroke-width="2"/>
+    <text x="14" y="50" font-size="13" fill="#1d3b5a">a = [1, [2,3]]</text>
+    <path d="M65,70 L65,92" stroke="#adb5bd" stroke-width="2" marker-end="url(#ar)"/>
+    <text x="80" y="100" font-size="13" fill="#495057">b = deepcopy(a)（连内层也复制）</text>
+    <rect x="0" y="110" width="120" height="46" rx="8" fill="#ebfbee" stroke="#2f9e44"/>
+    <text x="14" y="138" font-size="12" fill="#1d3b5a">外壳 a</text>
+    <rect x="160" y="110" width="120" height="46" rx="8" fill="#ebfbee" stroke="#2f9e44"/>
+    <text x="174" y="138" font-size="12" fill="#1d3b5a">外壳 b</text>
+    <rect x="0" y="180" width="120" height="46" rx="8" fill="#fff4e6" stroke="#ffa94d"/>
+    <text x="10" y="208" font-size="12" fill="#e8590c">内层 [2,3]</text>
+    <rect x="160" y="180" width="120" height="46" rx="8" fill="#fff4e6" stroke="#ffa94d"/>
+    <text x="170" y="208" font-size="12" fill="#e8590c">内层 [2,3]</text>
+    <path d="M60,133 L60,177" stroke="#2f9e44" stroke-width="2" marker-end="url(#arg)"/>
+    <path d="M220,133 L220,177" stroke="#2f9e44" stroke-width="2" marker-end="url(#arg)"/>
+    <text x="0" y="270" font-size="13" fill="#2f9e44" font-weight="700">✓ b[1][0]=99 → a 不受影响</text>
+    <text x="0" y="292" font-size="13" fill="#495057">两份完全独立，改 b 不会动 a。</text>
+  </g>
+
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#adb5bd"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#e03131"/></marker>
+    <marker id="arg" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#2f9e44"/></marker>
+  </defs>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" font-family="Consolas, 'Courier New', monospace">
+  <rect width="820" height="420" rx="12" fill="#1e1e1e"/>
+  <rect x="0" y="0" width="820" height="44" rx="12" fill="#323233"/>
+  <rect x="0" y="32" width="820" height="12" fill="#323233"/>
+  <circle cx="26" cy="22" r="7" fill="#ff5f56"/>
+  <circle cx="50" cy="22" r="7" fill="#ffbd2e"/>
+  <circle cx="74" cy="22" r="7" fill="#27c93f"/>
+  <text x="120" y="27" font-size="14" fill="#9da5b4" font-family="Segoe UI, sans-serif">bank_account.py — 面向对象示例</text>
+
+  <g font-size="16">
+    <text x="40" y="92" fill="#569cd6">class</text>
+    <text x="112" y="92" fill="#4ec9b0">Account:</text>
+    <text x="64" y="128" fill="#569cd6">def</text>
+    <text x="120" y="128" fill="#dcdcaa">__init__</text>
+    <text x="208" y="128" fill="#d4d4d4">(</text>
+    <text x="224" y="128" fill="#9cdcfe">self</text>
+    <text x="272" y="128" fill="#d4d4d4">, </text>
+    <text x="288" y="128" fill="#9cdcfe">owner</text>
+    <text x="360" y="128" fill="#d4d4d4">):</text>
+    <text x="88" y="164" fill="#9cdcfe">self.owner</text>
+    <text x="196" y="164" fill="#d4d4d4"> = </text>
+    <text x="228" y="164" fill="#9cdcfe">owner</text>
+    <text x="88" y="200" fill="#9cdcfe">self.balance</text>
+    <text x="216" y="200" fill="#d4d4d4"> = </text>
+    <text x="248" y="200" fill="#b5cea8">0</text>
+
+    <text x="64" y="244" fill="#569cd6">def</text>
+    <text x="120" y="244" fill="#dcdcaa">deposit</text>
+    <text x="216" y="244" fill="#d4d4d4">(</text>
+    <text x="232" y="244" fill="#9cdcfe">self</text>
+    <text x="280" y="244" fill="#d4d4d4">, </text>
+    <text x="296" y="244" fill="#9cdcfe">amount</text>
+    <text x="376" y="244" fill="#d4d4d4">):</text>
+    <text x="88" y="280" fill="#9cdcfe">self.balance</text>
+    <text x="216" y="280" fill="#d4d4d4"> += </text>
+    <text x="264" y="280" fill="#9cdcfe">amount</text>
+
+    <text x="40" y="324" fill="#c586c0">a</text>
+    <text x="56" y="324" fill="#d4d4d4"> = </text>
+    <text x="88" y="324" fill="#4ec9b0">Account</text>
+    <text x="176" y="324" fill="#d4d4d4">(</text>
+    <text x="192" y="324" fill="#ce9178">"小明"</text>
+    <text x="256" y="324" fill="#d4d4d4">)</text>
+    <text x="40" y="360" fill="#c586c0">a</text>
+    <text x="56" y="360" fill="#d4d4d4">.</text>
+    <text x="72" y="360" fill="#dcdcaa">deposit</text>
+    <text x="160" y="360" fill="#d4d4d4">(</text>
+    <text x="176" y="360" fill="#b5cea8">100</text>
+    <text x="208" y="360" fill="#d4d4d4">)</text>
+  </g>
+</svg>

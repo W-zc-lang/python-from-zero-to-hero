@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 480" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="820" height="480" fill="#f8fafc"/>
+  <text x="40" y="50" font-size="26" font-weight="800" fill="#1d3b5a">第 9 章 · 模块与包：把代码"分门别类"放好</text>
+  <text x="40" y="80" font-size="14" fill="#555">一个 .py 文件 = 一个模块；多个模块组成包（文件夹 + __init__.py）。</text>
+
+  <!-- 目录树 -->
+  <g transform="translate(40,110)">
+    <text x="0" y="0" font-size="16" font-weight="700" fill="#3776ab">① 项目目录结构示例</text>
+    <rect x="0" y="16" width="360" height="310" rx="10" fill="#ffffff" stroke="#dee2e6"/>
+    <text x="16" y="46" font-size="14" font-family="Consolas,monospace" fill="#1d3b5a">my_project/</text>
+    <text x="36" y="72" font-size="14" font-family="Consolas,monospace" fill="#2f9e44">├─ main.py</text>
+    <text x="36" y="98" font-size="14" font-family="Consolas,monospace" fill="#6741d9">├─ utils/</text>
+    <text x="60" y="124" font-size="14" font-family="Consolas,monospace" fill="#868e96">│  ├─ __init__.py</text>
+    <text x="60" y="150" font-size="14" font-family="Consolas,monospace" fill="#1c7ed6">│  ├─ string_tools.py</text>
+    <text x="60" y="176" font-size="14" font-family="Consolas,monospace" fill="#1c7ed6">│  └─ math_tools.py</text>
+    <text x="36" y="202" font-size="14" font-family="Consolas,monospace" fill="#6741d9">└─ models/</text>
+    <text x="60" y="228" font-size="14" font-family="Consolas,monospace" fill="#868e96">   ├─ __init__.py</text>
+    <text x="60" y="254" font-size="14" font-family="Consolas,monospace" fill="#1c7ed6">   └─ user.py</text>
+    <line x1="16" y1="276" x2="340" y2="276" stroke="#f1f3f5"/>
+    <text x="16" y="300" font-size="12" fill="#868e96">__init__.py 让文件夹成为"包"</text>
+    <text x="16" y="320" font-size="12" fill="#868e96">可以是空文件，也可写包级初始化</text>
+  </g>
+
+  <!-- 导入方式 -->
+  <g transform="translate(420,110)">
+    <text x="0" y="0" font-size="16" font-weight="700" fill="#3776ab">② 四种导入方式</text>
+    <g font-size="12.5">
+      <rect x="0" y="16" width="360" height="56" rx="8" fill="#1e1e1e"/>
+      <text x="14" y="40" font-family="Consolas,monospace" fill="#9cdcfe">import math</text>
+      <text x="14" y="62" font-family="Consolas,monospace" fill="#6a9955"># 用 math.sqrt()</text>
+      <rect x="0" y="82" width="360" height="56" rx="8" fill="#1e1e1e"/>
+      <text x="14" y="106" font-family="Consolas,monospace" fill="#9cdcfe">from math import sqrt</text>
+      <text x="14" y="128" font-family="Consolas,monospace" fill="#6a9955"># 直接 sqrt()</text>
+      <rect x="0" y="148" width="360" height="56" rx="8" fill="#1e1e1e"/>
+      <text x="14" y="172" font-family="Consolas,monospace" fill="#9cdcfe">import math as m</text>
+      <text x="14" y="194" font-family="Consolas,monospace" fill="#6a9955"># 起别名 m.sqrt()</text>
+      <rect x="0" y="214" width="360" height="56" rx="8" fill="#1e1e1e"/>
+      <text x="14" y="238" font-family="Consolas,monospace" fill="#9cdcfe">from utils import string_tools</text>
+      <text x="14" y="260" font-family="Consolas,monospace" fill="#6a9955"># 导入自定义包</text>
+    </g>
+  </g>
+
+  <!-- 标准库 / 第三方 -->
+  <g transform="translate(40,440)">
+    <rect x="0" y="0" width="740" height="34" rx="8" fill="#e7f5ff" stroke="#a5d8ff"/>
+    <text x="16" y="22" font-size="13" fill="#1c7ed6">内置模块（无需安装）：os · sys · math · datetime · random · re · json · collections …</text>
+  </g>
+</svg>

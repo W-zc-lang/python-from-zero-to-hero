@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 500" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="820" height="500" fill="#f8fafc"/>
+  <text x="40" y="50" font-size="26" font-weight="800" fill="#1d3b5a">第 7 章 · 函数：把代码打包成"可复用的机器"</text>
+
+  <!-- 函数结构 -->
+  <g transform="translate(40,90)">
+    <text x="0" y="0" font-size="16" font-weight="700" fill="#3776ab">① 函数的组成</text>
+    <rect x="0" y="16" width="360" height="170" rx="10" fill="#1e1e1e"/>
+    <text x="14" y="44" font-family="Consolas,monospace" font-size="13" fill="#dcdcaa">def add(a, b):</text>
+    <text x="38" y="66" font-family="Consolas,monospace" font-size="13" fill="#ce9178">"""返回两数之和"""</text>
+    <text x="38" y="88" font-family="Consolas,monospace" font-size="13" fill="#9cdcfe">result = a + b</text>
+    <text x="38" y="110" font-family="Consolas,monospace" font-size="13" fill="#c586c0">return</text>
+    <text x="92" y="110" font-family="Consolas,monospace" font-size="13" fill="#9cdcfe">result</text>
+    <text x="14" y="140" font-family="Consolas,monospace" font-size="13" fill="#ce9178">print(add(3, 5))  # 8</text>
+    <text x="14" y="166" font-size="12" fill="#6a9955">def 定义 · a,b 是参数 · return 返回结果</text>
+  </g>
+
+  <!-- 参数类型 -->
+  <g transform="translate(420,90)">
+    <text x="0" y="0" font-size="16" font-weight="700" fill="#3776ab">② 四种参数</text>
+    <g font-size="12.5" fill="#495057">
+      <rect x="0" y="16" width="360" height="44" rx="8" fill="#ffffff" stroke="#dee2e6"/>
+      <text x="14" y="38" font-weight="700" fill="#1d3b5a">位置参数</text><text x="120" y="38" fill="#495057">add(3, 5) 按位置对应</text>
+      <rect x="0" y="68" width="360" height="44" rx="8" fill="#ffffff" stroke="#dee2e6"/>
+      <text x="14" y="90" font-weight="700" fill="#1d3b5a">默认参数</text><text x="120" y="90" fill="#495057">def f(x=10): 不传用默认值</text>
+      <rect x="0" y="120" width="360" height="44" rx="8" fill="#ffffff" stroke="#dee2e6"/>
+      <text x="14" y="142" font-weight="700" fill="#1d3b5a">可变参数</text><text x="120" y="142" fill="#495057">*args 接收多个位置值</text>
+      <rect x="0" y="172" width="360" height="44" rx="8" fill="#ffffff" stroke="#dee2e6"/>
+      <text x="14" y="194" font-weight="700" fill="#1d3b5a">关键字参数</text><text x="120" y="194" fill="#495057">**kwargs 接收多个键值对</text>
+    </g>
+  </g>
+
+  <!-- 作用域 -->
+  <g transform="translate(40,290)">
+    <text x="0" y="0" font-size="16" font-weight="700" fill="#3776ab">③ 作用域：变量能"看到"的范围</text>
+    <rect x="0" y="16" width="360" height="150" rx="10" fill="#ffffff" stroke="#dee2e6"/>
+    <rect x="20" y="40" width="320" height="100" rx="8" fill="#f1f3f5" stroke="#ced4da"/>
+    <text x="36" y="64" font-size="12" fill="#495057">全局作用域（函数外）</text>
+    <text x="52" y="88" font-size="12" fill="#495057">└─ 局部作用域（函数内）</text>
+    <text x="68" y="110" font-size="12" fill="#495057">变量只在自己层内有效</text>
+    <text x="20" y="162" font-size="12" fill="#868e96">局部变量优先；想改全局需用 global 声明</text>
+  </g>
+
+  <!-- lambda -->
+  <g transform="translate(420,290)">
+    <text x="0" y="0" font-size="16" font-weight="700" fill="#3776ab">④ 匿名函数 lambda</text>
+    <rect x="0" y="16" width="360" height="70" rx="10" fill="#1e1e1e"/>
+    <text x="14" y="44" font-family="Consolas,monospace" font-size="13" fill="#9cdcfe">square = lambda x: x*x</text>
+    <text x="14" y="68" font-family="Consolas,monospace" font-size="13" fill="#ce9178">square(4)  # 16</text>
+    <rect x="0" y="98" width="360" height="68" rx="10" fill="#fff9db" stroke="#ffe066"/>
+    <text x="14" y="124" font-size="13" font-weight="700" fill="#e67700">💡 一句话小函数</text>
+    <text x="14" y="148" font-size="12" fill="#664d03">常用于排序 key= 或作为参数传递。</text>
+  </g>
+
+  <text x="40" y="486" font-size="13" fill="#868e96">函数让"重复的事"只写一次；后续章节的装饰器、面向对象，都是在函数之上的进阶玩法。</text>
+</svg>

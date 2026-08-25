@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 460" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="820" height="460" fill="#f8fafc"/>
+  <text x="40" y="50" font-size="26" font-weight="800" fill="#1d3b5a">切片（slice）：像切面包一样取一段</text>
+  <text x="40" y="80" font-size="14" fill="#555">字符串 / 列表都可用 [起:止:步长]，规则是"含头不含尾"，下标从 0 开始，也支持负数。</text>
+
+  <!-- 字符与下标 -->
+  <g transform="translate(60,120)">
+    <!-- 字符框 -->
+    <g font-size="15" font-weight="700">
+      <rect x="0"   y="0" width="56" height="48" rx="8" fill="#e7f5ff" stroke="#1c7ed6"/>
+      <rect x="60"  y="0" width="56" height="48" rx="8" fill="#e7f5ff" stroke="#1c7ed6"/>
+      <rect x="120" y="0" width="56" height="48" rx="8" fill="#e7f5ff" stroke="#1c7ed6"/>
+      <rect x="180" y="0" width="56" height="48" rx="8" fill="#e7f5ff" stroke="#1c7ed6"/>
+      <rect x="240" y="0" width="56" height="48" rx="8" fill="#e7f5ff" stroke="#1c7ed6"/>
+      <rect x="300" y="0" width="56" height="48" rx="8" fill="#e7f5ff" stroke="#1c7ed6"/>
+      <text x="20"  y="32" fill="#1d3b5a">P</text>
+      <text x="80"  y="32" fill="#1d3b5a">Y</text>
+      <text x="140" y="32" fill="#1d3b5a">T</text>
+      <text x="200" y="32" fill="#1d3b5a">H</text>
+      <text x="260" y="32" fill="#1d3b5a">O</text>
+      <text x="320" y="32" fill="#1d3b5a">N</text>
+    </g>
+    <!-- 正向下标 -->
+    <g font-size="13" fill="#2f9e44" text-anchor="middle">
+      <text x="28"  y="74">0</text>
+      <text x="88"  y="74">1</text>
+      <text x="148" y="74">2</text>
+      <text x="208" y="74">3</text>
+      <text x="268" y="74">4</text>
+      <text x="328" y="74">5</text>
+    </g>
+    <!-- 负向下标 -->
+    <g font-size="13" fill="#e8590c" text-anchor="middle">
+      <text x="28"  y="94">-6</text>
+      <text x="88"  y="94">-5</text>
+      <text x="148" y="94">-4</text>
+      <text x="208" y="94">-3</text>
+      <text x="268" y="94">-2</text>
+      <text x="328" y="94">-1</text>
+    </g>
+  </g>
+
+  <!-- 示例卡 -->
+  <g transform="translate(40,250)" font-size="13">
+    <rect x="0" y="0" width="360" height="180" rx="10" fill="#1e1e1e"/>
+    <text x="14" y="28" font-family="Consolas,monospace" fill="#9cdcfe">s = "PYTHON"</text>
+    <text x="14" y="56" font-family="Consolas,monospace" fill="#ce9178">s[1:4]</text>
+    <text x="150" y="56" fill="#d4d4d4">→ "YTH"  (下标1,2,3)</text>
+    <text x="14" y="84" font-family="Consolas,monospace" fill="#ce9178">s[:3]</text>
+    <text x="150" y="84" fill="#d4d4d4">→ "PYT"  (从头开始)</text>
+    <text x="14" y="112" font-family="Consolas,monospace" fill="#ce9178">s[::2]</text>
+    <text x="150" y="112" fill="#d4d4d4">→ "PTO"  (步长2)</text>
+    <text x="14" y="140" font-family="Consolas,monospace" fill="#ce9178">s[::-1]</text>
+    <text x="150" y="140" fill="#d4d4d4">→ "NOHTP" (反转)</text>
+    <text x="14" y="168" font-family="Consolas,monospace" fill="#ce9178">s[-3:]</text>
+    <text x="150" y="168" fill="#d4d4d4">→ "HON"  (倒数3个)</text>
+
+    <rect x="380" y="0" width="360" height="180" rx="10" fill="#fff9db" stroke="#ffe066"/>
+    <text x="14" y="28" font-weight="700" fill="#e67700">💡 记忆口诀</text>
+    <text x="14" y="56" fill="#664d03">· 起点省略 = 从头；终点省略 = 到尾</text>
+    <text x="14" y="84" fill="#664d03">· 含头不含尾：s[1:4] 不含下标 4</text>
+    <text x="14" y="112" fill="#664d03">· 负数从右往左数，-1 是最后一个</text>
+    <text x="14" y="140" fill="#664d03">· 步长为负 = 反向取</text>
+    <text x="14" y="168" fill="#664d03">· 切片产生"新对象"，不改原数据</text>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="820" height="430" fill="#f8fafc"/>
+  <!-- 编辑器窗口 -->
+  <rect x="40" y="40" width="740" height="350" rx="12" fill="#1e1e1e"/>
+  <rect x="40" y="40" width="740" height="38" rx="12" fill="#323233"/>
+  <circle cx="66" cy="59" r="6" fill="#ff5f56"/>
+  <circle cx="86" cy="59" r="6" fill="#ffbd2e"/>
+  <circle cx="106" cy="59" r="6" fill="#27c93f"/>
+  <text x="380" y="64" font-size="13" fill="#9aa0a6" text-anchor="middle">scrape_quotes.py — Python 爬虫示例</text>
+
+  <!-- 代码行 -->
+  <g transform="translate(64,108)" font-family="Consolas,monospace" font-size="14">
+    <text x="0" y="0" fill="#6a9955"># 1. 安装：pip install requests beautifulsoup4</text>
+    <text x="0" y="28" fill="#c586c0">import</text><text x="58" y="28" fill="#9cdcfe"> requests</text>
+    <text x="0" y="52" fill="#c586c0">from</text><text x="44" y="52" fill="#9cdcfe"> bs4 </text><text x="86" y="52" fill="#c586c0">import</text><text x="130" y="52" fill="#9cdcfe"> BeautifulSoup</text>
+    <text x="0" y="86" fill="#6a9955"># 2. 发送请求，拿到网页</text>
+    <text x="0" y="110" fill="#9cdcfe">url</text><text x="36" y="110" fill="#d4d4d4"> = </text><text x="50" y="110" fill="#ce9178">"https://quotes.toscrape.com/"</text>
+    <text x="0" y="134" fill="#9cdcfe">r</text><text x="16" y="134" fill="#d4d4d4"> = </text><text x="30" y="134" fill="#dcdcaa">requests</text><text x="108" y="134" fill="#d4d4d4">.</text><text x="116" y="134" fill="#dcdcaa">get</text><text x="146" y="134" fill="#d4d4d4">(url, </text><text x="190" y="134" fill="#9cdcfe">headers</text><text x="244" y="134" fill="#d4d4d4">={</text><text x="256" y="134" fill="#ce9178">"User-Agent"</text><text x="370" y="134" fill="#d4d4d4">: </text><text x="384" y="134" fill="#ce9178">"Mozilla/5.0"</text><text x="492" y="134" fill="#d4d4d4">})</text>
+    <text x="0" y="158" fill="#c586c0">print</text><text x="52" y="158" fill="#d4d4d4">(</text><text x="60" y="158" fill="#9cdcfe">r</text><text x="72" y="158" fill="#d4d4d4">.</text><text x="80" y="158" fill="#9cdcfe">status_code</text><text x="172" y="158" fill="#d4d4d4">)  </text><text x="220" y="158" fill="#6a9955"># 200 表示成功</text>
+    <text x="0" y="186" fill="#6a9955"># 3. 解析 HTML，提取所有名言与作者</text>
+    <text x="0" y="210" fill="#9cdcfe">soup</text><text x="50" y="210" fill="#d4d4d4"> = </text><text x="64" y="210" fill="#dcdcaa">BeautifulSoup</text><text x="190" y="210" fill="#d4d4d4">(</text><text x="198" y="210" fill="#9cdcfe">r</text><text x="210" y="210" fill="#d4d4d4">.</text><text x="218" y="210" fill="#9cdcfe">text</text><text x="256" y="210" fill="#d4d4d4">, </text><text x="270" y="210" fill="#ce9178">"html.parser"</text><text x="388" y="210" fill="#d4d4d4">)</text>
+    <text x="0" y="234" fill="#c586c0">for</text><text x="36" y="234" fill="#d4d4d4"> q </text><text x="50" y="234" fill="#c586c0">in</text><text x="74" y="234" fill="#9cdcfe"> soup</text><text x="124" y="234" fill="#d4d4d4">.</text><text x="132" y="234" fill="#dcdcaa">select</text><text x="186" y="234" fill="#d4d4d4">(</text><text x="194" y="234" fill="#ce9178">".quote .text"</text><text x="320" y="234" fill="#d4d4d4">):</text>
+    <text x="28" y="258" fill="#c586c0">print</text><text x="80" y="258" fill="#d4d4d4">(</text><text x="88" y="258" fill="#9cdcfe">q</text><text x="100" y="258" fill="#d4d4d4">.</text><text x="108" y="258" fill="#dcdcaa">get_text</text><text x="176" y="258" fill="#d4d4d4">(strip=</text><text x="238" y="258" fill="#569cd6">True</text><text x="272" y="258" fill="#d4d4d4">))</text>
+  </g>
+</svg>

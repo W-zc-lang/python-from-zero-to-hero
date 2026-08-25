@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 520" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="820" height="520" fill="#f8fafc"/>
+  <text x="40" y="50" font-size="26" font-weight="800" fill="#1d3b5a">第 12 章 · 常用标准库：开箱即用的"官方工具箱"</text>
+  <text x="40" y="80" font-size="14" fill="#555">标准库随 Python 安装自带，import 即可用，无需 pip 安装。</text>
+
+  <!-- 卡片网格 -->
+  <g font-size="13">
+    <!-- os -->
+    <g transform="translate(40,110)">
+      <rect x="0" y="0" width="170" height="80" rx="10" fill="#e7f5ff" stroke="#a5d8ff"/>
+      <text x="14" y="26" font-weight="700" fill="#1c7ed6" font-family="Consolas,monospace">os</text>
+      <text x="14" y="50" fill="#495057">操作系统交互</text>
+      <text x="14" y="68" fill="#495057">路径/目录/环境变量</text>
+    </g>
+    <!-- sys -->
+    <g transform="translate(225,110)">
+      <rect x="0" y="0" width="170" height="80" rx="10" fill="#f3f0ff" stroke="#d0bfff"/>
+      <text x="14" y="26" font-weight="700" fill="#6741d9" font-family="Consolas,monospace">sys</text>
+      <text x="14" y="50" fill="#495057">解释器相关</text>
+      <text x="14" y="68" fill="#495057">argv / 退出 / 路径</text>
+    </g>
+    <!-- math -->
+    <g transform="translate(410,110)">
+      <rect x="0" y="0" width="170" height="80" rx="10" fill="#ebfbee" stroke="#b2f2bb"/>
+      <text x="14" y="26" font-weight="700" fill="#2f9e44" font-family="Consolas,monospace">math</text>
+      <text x="14" y="50" fill="#495057">数学运算</text>
+      <text x="14" y="68" fill="#495057">sqrt / pi / 取整</text>
+    </g>
+    <!-- datetime -->
+    <g transform="translate(595,110)">
+      <rect x="0" y="0" width="170" height="80" rx="10" fill="#fff4e6" stroke="#ffd8a8"/>
+      <text x="14" y="26" font-weight="700" fill="#e8590c" font-family="Consolas,monospace">datetime</text>
+      <text x="14" y="50" fill="#495057">日期时间</text>
+      <text x="14" y="68" fill="#495057">now / 格式化</text>
+    </g>
+
+    <!-- random -->
+    <g transform="translate(40,205)">
+      <rect x="0" y="0" width="170" height="80" rx="10" fill="#fff0f6" stroke="#fcc2d7"/>
+      <text x="14" y="26" font-weight="700" fill="#c2255c" font-family="Consolas,monospace">random</text>
+      <text x="14" y="50" fill="#495057">随机数</text>
+      <text x="14" y="68" fill="#495057">randint / choice</text>
+    </g>
+    <!-- re -->
+    <g transform="translate(225,205)">
+      <rect x="0" y="0" width="170" height="80" rx="10" fill="#e6fcf5" stroke="#96f2d7"/>
+      <text x="14" y="26" font-weight="700" fill="#0c8599" font-family="Consolas,monospace">re</text>
+      <text x="14" y="50" fill="#495057">正则表达式</text>
+      <text x="14" y="68" fill="#495057">文本匹配/提取</text>
+    </g>
+    <!-- json -->
+    <g transform="translate(410,205)">
+      <rect x="0" y="0" width="170" height="80" rx="10" fill="#f8f9fa" stroke="#ced4da"/>
+      <text x="14" y="26" font-weight="700" fill="#495057" font-family="Consolas,monospace">json</text>
+      <text x="14" y="50" fill="#495057">JSON 数据</text>
+      <text x="14" y="68" fill="#495057">dumps / loads</text>
+    </g>
+    <!-- collections -->
+    <g transform="translate(595,205)">
+      <rect x="0" y="0" width="170" height="80" rx="10" fill="#f1f3f5" stroke="#adb5bd"/>
+      <text x="14" y="26" font-weight="700" fill="#343a40" font-family="Consolas,monospace">collections</text>
+      <text x="14" y="50" fill="#495057">增强容器</text>
+      <text x="14" y="68" fill="#495057">Counter / deque</text>
+    </g>
+
+    <!-- argparse -->
+    <g transform="translate(40,300)">
+      <rect x="0" y="0" width="170" height="80" rx="10" fill="#fff9db" stroke="#ffe066"/>
+      <text x="14" y="26" font-weight="700" fill="#e67700" font-family="Consolas,monospace">argparse</text>
+      <text x="14" y="50" fill="#495057">命令行参数</text>
+      <text x="14" y="68" fill="#495057">解析 -x 参数</text>
+    </g>
+    <!-- pathlib -->
+    <g transform="translate(225,300)">
+      <rect x="0" y="0" width="170" height="80" rx="10" fill="#e7f5ff" stroke="#a5d8ff"/>
+      <text x="14" y="26" font-weight="700" fill="#1c7ed6" font-family="Consolas,monospace">pathlib</text>
+      <text x="14" y="50" fill="#495057">面向对象的路径</text>
+      <text x="14" y="68" fill="#495057">Path() 更直观</text>
+    </g>
+    <!-- itertools -->
+    <g transform="translate(410,300)">
+      <rect x="0" y="0" width="170" height="80" rx="10" fill="#ebfbee" stroke="#b2f2bb"/>
+      <text x="14" y="26" font-weight="700" fill="#2f9e44" font-family="Consolas,monospace">itertools</text>
+      <text x="14" y="50" fill="#495057">迭代器工具</text>
+      <text x="14" y="68" fill="#495057">排列/组合</text>
+    </g>
+    <!-- logging -->
+    <g transform="translate(595,300)">
+      <rect x="0" y="0" width="170" height="80" rx="10" fill="#f3f0ff" stroke="#d0bfff"/>
+      <text x="14" y="26" font-weight="700" fill="#6741d9" font-family="Consolas,monospace">logging</text>
+      <text x="14" y="50" fill="#495057">日志输出</text>
+      <text x="14" y="68" fill="#495057">替代 print 调试</text>
+    </g>
+  </g>
+
+  <g transform="translate(40,420)">
+    <rect x="0" y="0" width="740" height="70" rx="12" fill="#f1f3f5" stroke="#ced4da"/>
+    <text x="16" y="28" font-size="14" font-weight="700" fill="#1d3b5a">使用方式</text>
+    <text x="16" y="52" font-size="13" fill="#495057">import os → os.listdir(".")；import json → json.loads(s)。遇到需求先想"标准库有没有"，再考虑第三方库。</text>
+  </g>
+</svg>

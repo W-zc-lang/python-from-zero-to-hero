@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 560" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="820" height="560" fill="#f8fafc"/>
+  <text x="40" y="50" font-size="26" font-weight="800" fill="#1d3b5a">第 4–5 章 · Python 数据类型总览</text>
+  <text x="40" y="80" font-size="14" fill="#555">数据都要"装"在某种类型里。左边是可变的"容器"，右边是不可变的"值"。</text>
+
+  <!-- 不可变 -->
+  <g transform="translate(40,120)">
+    <text x="0" y="0" font-size="17" font-weight="700" fill="#e8590c">不可变类型（创建后内容不能改）</text>
+    <g font-size="13">
+      <rect x="0" y="20" width="360" height="56" rx="10" fill="#fff4e6" stroke="#ffd8a8"/>
+      <text x="14" y="44" font-weight="700" fill="#1d3b5a">int 整数</text>
+      <text x="14" y="64" fill="#555">age = 18　|　计数、运算</text>
+      <rect x="0" y="86" width="360" height="56" rx="10" fill="#fff4e6" stroke="#ffd8a8"/>
+      <text x="14" y="110" font-weight="700" fill="#1d3b5a">float 浮点数</text>
+      <text x="14" y="130" fill="#555">price = 3.14　|　带小数</text>
+      <rect x="0" y="152" width="360" height="56" rx="10" fill="#fff4e6" stroke="#ffd8a8"/>
+      <text x="14" y="176" font-weight="700" fill="#1d3b5a">str 字符串</text>
+      <text x="14" y="196" fill="#555">s = "hello"　| 文本，用引号</text>
+      <rect x="0" y="218" width="360" height="56" rx="10" fill="#fff4e6" stroke="#ffd8a8"/>
+      <text x="14" y="242" font-weight="700" fill="#1d3b5a">bool 布尔</text>
+      <text x="14" y="262" fill="#555">flag = True / False　| 真假</text>
+      <rect x="0" y="284" width="360" height="56" rx="10" fill="#fff4e6" stroke="#ffd8a8"/>
+      <text x="14" y="308" font-weight="700" fill="#1d3b5a">tuple 元组</text>
+      <text x="14" y="328" fill="#555">t = (1,2,3)　| 只读列表</text>
+    </g>
+  </g>
+
+  <!-- 可变 -->
+  <g transform="translate(420,120)">
+    <text x="0" y="0" font-size="17" font-weight="700" fill="#2f9e44">可变类型（内容可增删改）</text>
+    <g font-size="13">
+      <rect x="0" y="20" width="360" height="78" rx="10" fill="#ebfbee" stroke="#b2f2bb"/>
+      <text x="14" y="44" font-weight="700" fill="#1d3b5a">list 列表</text>
+      <text x="14" y="64" fill="#555">ls = [1,"a",True]　有序、可重复</text>
+      <text x="14" y="84" fill="#555">支持 .append() / 下标 ls[0]</text>
+      <rect x="0" y="108" width="360" height="78" rx="10" fill="#ebfbee" stroke="#b2f2bb"/>
+      <text x="14" y="132" font-weight="700" fill="#1d3b5a">dict 字典</text>
+      <text x="14" y="152" fill="#555">d = {"name":"小明"}　键值对</text>
+      <text x="14" y="172" fill="#555">用 d["name"] 取值，像查字典</text>
+      <rect x="0" y="196" width="360" height="78" rx="10" fill="#ebfbee" stroke="#b2f2bb"/>
+      <text x="14" y="220" font-weight="700" fill="#1d3b5a">set 集合</text>
+      <text x="14" y="240" fill="#555">s = {1,2,3}　无序、不重复</text>
+      <text x="14" y="260" fill="#555">用于去重、成员判断</text>
+    </g>
+  </g>
+
+  <!-- 转换小贴士 -->
+  <g transform="translate(40,440)">
+    <rect x="0" y="0" width="740" height="100" rx="12" fill="#e7f5ff" stroke="#a5d8ff"/>
+    <text x="20" y="30" font-size="15" font-weight="700" fill="#1c7ed6">🔁 类型转换（常用）</text>
+    <text x="20" y="58" font-size="14" fill="#1d3b5a" font-family="Consolas,monospace">int("10") → 10　|　str(18) → "18"　|　float("3.5") → 3.5　|　list("abc") → ['a','b','c']</text>
+    <text x="20" y="84" font-size="14" fill="#495057">转换失败时（如 int("abc")）会报错——这正是第 11 章"异常处理"要解决的问题。</text>
+  </g>
+</svg>

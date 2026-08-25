@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3776ab"/>
+      <stop offset="100%" stop-color="#1d3b5a"/>
+    </linearGradient>
+    <linearGradient id="yl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd43b"/>
+      <stop offset="100%" stop-color="#f59f00"/>
+    </linearGradient>
+  </defs>
+  <rect width="820" height="440" rx="18" fill="url(#bg)"/>
+  <!-- python logo motif: two interlocking rounded shapes -->
+  <g transform="translate(650,90)">
+    <path d="M0,40 a40,40 0 1,1 0,-0.1 Z" fill="none"/>
+    <circle cx="20" cy="20" r="34" fill="#ffd43b" opacity="0.95"/>
+    <circle cx="20" cy="20" r="34" fill="none" stroke="#1d3b5a" stroke-width="3"/>
+    <text x="20" y="30" font-size="34" font-weight="700" text-anchor="middle" fill="#1d3b5a">蟒</text>
+  </g>
+  <text x="60" y="180" font-size="60" font-weight="800" fill="#ffffff">Python</text>
+  <text x="60" y="248" font-size="48" font-weight="800" fill="url(#yl)">从入门到精通</text>
+  <text x="62" y="300" font-size="22" fill="#cfe3f5">一份写给初学者的、循序渐进的系统学习指南</text>
+  <text x="62" y="338" font-size="16" fill="#9fb8d0">基础语法 · 数据类型 · 控制流 · 函数 · 面向对象 · 模块 · 文件 · 异常 · 标准库</text>
+  <rect x="60" y="370" width="220" height="36" rx="18" fill="#ffffff" opacity="0.12"/>
+  <text x="80" y="394" font-size="16" fill="#ffffff">适合零基础系统学习</text>
+</svg>

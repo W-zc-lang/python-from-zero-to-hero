@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="820" height="420" fill="#f8fafc"/>
+  <text x="40" y="50" font-size="26" font-weight="800" fill="#1d3b5a">第 2 章 · 环境搭建四步法</text>
+  <text x="40" y="80" font-size="14" fill="#555">安装解释器 → 验证 → 选编辑器 → 跑通第一行代码</text>
+
+  <!-- flow steps -->
+  <g transform="translate(40,120)" font-size="14">
+    <!-- step 1 -->
+    <rect x="0" y="0" width="170" height="120" rx="14" fill="#ffffff" stroke="#3776ab" stroke-width="2"/>
+    <circle cx="24" cy="24" r="14" fill="#3776ab"/>
+    <text x="24" y="29" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+    <text x="16" y="62" font-weight="700" fill="#1d3b5a">下载解释器</text>
+    <text x="16" y="86" fill="#555">官网 python.org</text>
+    <text x="16" y="104" fill="#555">选 3.11+ 版本</text>
+    <text x="16" y="120" fill="#e03131">⚠ 勾选 Add to PATH</text>
+
+    <!-- arrow -->
+    <path d="M178,60 l24,0" stroke="#adb5bd" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+
+    <!-- step 2 -->
+    <rect x="212" y="0" width="170" height="120" rx="14" fill="#ffffff" stroke="#2f9e44" stroke-width="2"/>
+    <circle cx="236" cy="24" r="14" fill="#2f9e44"/>
+    <text x="236" y="29" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+    <text x="228" y="62" font-weight="700" fill="#1d3b5a">验证安装</text>
+    <text x="228" y="86" fill="#555">终端输入：</text>
+    <text x="228" y="106" font-family="Consolas,monospace" fill="#1d3b5a">python --version</text>
+
+    <path d="M390,60 l24,0" stroke="#adb5bd" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+
+    <!-- step 3 -->
+    <rect x="424" y="0" width="170" height="120" rx="14" fill="#ffffff" stroke="#f59f00" stroke-width="2"/>
+    <circle cx="448" cy="24" r="14" fill="#f59f00"/>
+    <text x="448" y="29" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+    <text x="440" y="62" font-weight="700" fill="#1d3b5a">选编辑器</text>
+    <text x="440" y="86" fill="#555">VS Code（推荐）</text>
+    <text x="440" y="104" fill="#555">PyCharm</text>
+    <text x="440" y="120" fill="#555">或任意记事本</text>
+
+    <path d="M602,60 l24,0" stroke="#adb5bd" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+
+    <!-- step 4 -->
+    <rect x="636" y="0" width="150" height="120" rx="14" fill="#ffffff" stroke="#6741d9" stroke-width="2"/>
+    <circle cx="660" cy="24" r="14" fill="#6741d9"/>
+    <text x="660" y="29" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+    <text x="652" y="62" font-weight="700" fill="#1d3b5a">跑通代码</text>
+    <text x="652" y="86" fill="#555">保存 hello.py</text>
+    <text x="652" y="104" fill="#555">运行：</text>
+    <text x="652" y="120" font-family="Consolas,monospace" fill="#1d3b5a">python hello.py</text>
+  </g>
+
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#adb5bd"/>
+    </marker>
+  </defs>
+
+  <!-- tip box -->
+  <g transform="translate(40,290)">
+    <rect x="0" y="0" width="740" height="100" rx="12" fill="#fff9db" stroke="#ffe066"/>
+    <text x="20" y="30" font-size="15" font-weight="700" fill="#e67700">💡 小贴士</text>
+    <text x="20" y="58" font-size="14" fill="#664d03">· Windows 若提示 "python 不是命令"，多半是安装时忘了勾选 Add Python to PATH，重装并勾选即可。</text>
+    <text x="20" y="82" font-size="14" fill="#664d03">· 包管理命令：pip install 包名；查看已装：pip list。建议进阶后使用虚拟环境（见第 13 章）。</text>
+  </g>
+</svg>
