@@ -12,6 +12,9 @@
 > 📦 想按章节阅读或离线收藏？完整教程（15 章 + 附录 + 20 张配图）已打包发布在 **[Releases](https://github.com/W-zc-lang/python-from-zero-to-hero/releases)**，可一键下载。
 > 📦 Prefer reading by chapter or offline? The complete tutorial (15 chapters + appendix + 20 diagrams) is packaged in **[Releases](https://github.com/W-zc-lang/python-from-zero-to-hero/releases)** — download it there.
 
+> 📄 需要 **WPS / Word 文档版**？已生成 **`Python从入门到精通.docx`**（保留全部标题层级、中英双语段落、代码块底纹与 20 张配图），放在 `tutorial/` 目录，并随 Releases 提供下载。用 WPS 双击即可打开。
+> 📄 Need a **WPS / Word document**? A **`Python从入门到精通.docx`** is ready (full heading levels, bilingual paragraphs, shaded code blocks, 20 diagrams) in the `tutorial/` folder and in the Releases download. Open it in WPS with a double-click.
+
 # Python 从入门到精通
 
 **Python: From Beginner to Master**

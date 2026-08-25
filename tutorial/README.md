@@ -18,6 +18,8 @@ A step-by-step, **bilingual (中文 / English)** systematic learning guide for b
 
 - 中文简介：[intro-cn.md](intro-cn.md)
 - English intro (for GitHub About & social): [intro-en.md](intro-en.md)
+- **WPS / Word 文档版**：[Python从入门到精通.docx](Python从入门到精通.docx)（保留全部标题层级、中英双语段落、代码块底纹与 20 张配图，WPS 双击即开）
+- **WPS / Word document**: [Python从入门到精通.docx](Python从入门到精通.docx) (full heading levels, bilingual paragraphs, shaded code blocks, 20 diagrams — open in WPS)
 
 ---
 
