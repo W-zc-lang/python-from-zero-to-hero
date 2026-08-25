@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 480" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="820" height="480" fill="#f8fafc"/>
+  <text x="40" y="50" font-size="26" font-weight="800" fill="#1d3b5a">第 10 章 · 文件操作：让程序读写"外部世界"</text>
+
+  <!-- 读写流程 -->
+  <g transform="translate(40,90)">
+    <text x="0" y="0" font-size="16" font-weight="700" fill="#3776ab">① 打开 → 读写 → 关闭</text>
+    <rect x="0" y="20" width="110" height="56" rx="10" fill="#ffffff" stroke="#3776ab"/>
+    <text x="14" y="46" font-size="13" font-weight="700" fill="#1d3b5a">open()</text>
+    <text x="14" y="66" font-size="12" fill="#495057">打开文件</text>
+    <path d="M114,48 l18,0" stroke="#adb5bd" stroke-width="2" marker-end="url(#ar)"/>
+    <rect x="140" y="20" width="110" height="56" rx="10" fill="#ffffff" stroke="#2f9e44"/>
+    <text x="152" y="46" font-size="13" font-weight="700" fill="#1d3b5a">read/write</text>
+    <text x="152" y="66" font-size="12" fill="#495057">读写内容</text>
+    <path d="M254,48 l18,0" stroke="#adb5bd" stroke-width="2" marker-end="url(#ar)"/>
+    <rect x="280" y="20" width="110" height="56" rx="10" fill="#ffffff" stroke="#e8590c"/>
+    <text x="296" y="46" font-size="13" font-weight="700" fill="#1d3b5a">close()</text>
+    <text x="296" y="66" font-size="12" fill="#495057">关闭释放</text>
+  </g>
+
+  <!-- with 推荐写法 -->
+  <g transform="translate(40,180)">
+    <text x="0" y="0" font-size="16" font-weight="700" fill="#3776ab">② 推荐写法：with 自动关闭</text>
+    <rect x="0" y="16" width="360" height="120" rx="10" fill="#1e1e1e"/>
+    <text x="14" y="44" font-family="Consolas,monospace" font-size="13" fill="#c586c0">with</text>
+    <text x="58" y="44" font-family="Consolas,monospace" font-size="13" fill="#9cdcfe">open("a.txt","r",encoding="utf-8") as f:</text>
+    <text x="38" y="68" font-family="Consolas,monospace" font-size="13" fill="#ce9178">data = f.read()</text>
+    <text x="14" y="96" font-family="Consolas,monospace" font-size="13" fill="#9cdcfe">with open("b.txt","w",encoding="utf-8") as f:</text>
+    <text x="38" y="118" font-family="Consolas,monospace" font-size="13" fill="#ce9178">f.write("你好")</text>
+  </g>
+
+  <!-- 模式 -->
+  <g transform="translate(420,180)">
+    <text x="0" y="0" font-size="16" font-weight="700" fill="#3776ab">③ 常用打开模式</text>
+    <g font-size="13" fill="#495057">
+      <rect x="0" y="16" width="360" height="40" rx="8" fill="#ffffff" stroke="#dee2e6"/>
+      <text x="14" y="40" font-weight="700" fill="#1d3b5a">"r"</text><text x="70" y="40">只读（文件须存在）</text>
+      <rect x="0" y="62" width="360" height="40" rx="8" fill="#ffffff" stroke="#dee2e6"/>
+      <text x="14" y="86" font-weight="700" fill="#1d3b5a">"w"</text><text x="70" y="86">写入（不存在则新建，存在则清空）</text>
+      <rect x="0" y="108" width="360" height="40" rx="8" fill="#ffffff" stroke="#dee2e6"/>
+      <text x="14" y="132" font-weight="700" fill="#1d3b5a">"a"</text><text x="70" y="132">追加（写在末尾，不清空）</text>
+      <rect x="0" y="154" width="360" height="40" rx="8" fill="#ffffff" stroke="#dee2e6"/>
+      <text x="14" y="178" font-weight="700" fill="#1d3b5a">"+b"</text><text x="70" y="178">二进制：rb / wb（图片、视频）</text>
+    </g>
+  </g>
+
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#adb5bd"/>
+    </marker>
+  </defs>
+
+  <!-- 格式提示 -->
+  <g transform="translate(40,330)">
+    <rect x="0" y="0" width="740" height="120" rx="12" fill="#f1f3f5" stroke="#ced4da"/>
+    <text x="16" y="28" font-size="15" font-weight="700" fill="#1d3b5a">常用数据格式</text>
+    <text x="16" y="56" font-size="13" fill="#495057">· .txt：纯文本，read()/write() 直接处理字符串</text>
+    <text x="16" y="82" font-size="13" fill="#495057">· .csv：表格数据，可用标准库 csv 模块逐行读写</text>
+    <text x="16" y="108" font-size="13" fill="#495057">· .json：结构化数据，用 json.dumps() 存、json.loads() 读（Web 接口最常用）</text>
+  </g>
+</svg>

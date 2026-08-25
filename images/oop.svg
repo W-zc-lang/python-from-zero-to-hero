@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 520" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="820" height="520" fill="#f8fafc"/>
+  <text x="40" y="50" font-size="26" font-weight="800" fill="#1d3b5a">第 8 章 · 面向对象：用"类"与"对象"建模世界</text>
+
+  <!-- 类与对象 -->
+  <g transform="translate(40,90)">
+    <text x="0" y="0" font-size="16" font-weight="700" fill="#3776ab">① 类 = 模板，对象 = 实例</text>
+    <rect x="0" y="16" width="360" height="180" rx="10" fill="#1e1e1e"/>
+    <text x="14" y="44" font-family="Consolas,monospace" font-size="13" fill="#569cd6">class</text>
+    <text x="74" y="44" font-family="Consolas,monospace" font-size="13" fill="#4ec9b0">Dog:</text>
+    <text x="38" y="68" font-family="Consolas,monospace" font-size="13" fill="#9cdcfe">def __init__(self, name):</text>
+    <text x="62" y="90" font-family="Consolas,monospace" font-size="13" fill="#9cdcfe">self.name = name</text>
+    <text x="38" y="114" font-family="Consolas,monospace" font-size="13" fill="#569cd6">def</text>
+    <text x="80" y="114" font-family="Consolas,monospace" font-size="13" fill="#dcdcaa">bark(self):</text>
+    <text x="62" y="136" font-family="Consolas,monospace" font-size="13" fill="#ce9178">print(self.name, "汪!")</text>
+    <text x="14" y="164" font-family="Consolas,monospace" font-size="13" fill="#9cdcfe">d = Dog("旺财")</text>
+    <text x="14" y="186" font-family="Consolas,monospace" font-size="13" fill="#ce9178">d.bark()</text>
+  </g>
+
+  <!-- 三大特性 -->
+  <g transform="translate(420,90)">
+    <text x="0" y="0" font-size="16" font-weight="700" fill="#3776ab">② 三大特性</text>
+    <g font-size="13">
+      <rect x="0" y="16" width="360" height="56" rx="10" fill="#e7f5ff" stroke="#a5d8ff"/>
+      <text x="14" y="40" font-weight="700" fill="#1c7ed6">封装</text>
+      <text x="80" y="40" fill="#495057">把数据和方法包进类，隐藏细节</text>
+      <text x="14" y="62" fill="#495057">用 self.属性 管理状态，外部只调用方法</text>
+      <rect x="0" y="82" width="360" height="56" rx="10" fill="#ebfbee" stroke="#b2f2bb"/>
+      <text x="14" y="106" font-weight="700" fill="#2f9e44">继承</text>
+      <text x="80" y="106" fill="#495057">子类复用父类的属性和方法</text>
+      <text x="14" y="128" fill="#495057">class 子类(父类): 减少重复代码</text>
+      <rect x="0" y="148" width="360" height="56" rx="10" fill="#fff4e6" stroke="#ffd8a8"/>
+      <text x="14" y="172" font-weight="700" fill="#e8590c">多态</text>
+      <text x="80" y="172" fill="#495057">不同对象对同个方法做出不同反应</text>
+      <text x="14" y="194" fill="#495057">同一接口，多种实现，扩展更灵活</text>
+    </g>
+  </g>
+
+  <!-- 继承图 -->
+  <g transform="translate(40,300)">
+    <text x="0" y="0" font-size="16" font-weight="700" fill="#3776ab">③ 继承关系示意</text>
+    <rect x="120" y="20" width="140" height="50" rx="10" fill="#ffffff" stroke="#3776ab" stroke-width="2"/>
+    <text x="140" y="50" font-size="14" font-weight="700" fill="#1d3b5a">Animal（父类）</text>
+    <rect x="0" y="120" width="140" height="50" rx="10" fill="#e7f5ff" stroke="#1c7ed6"/>
+    <text x="14" y="150" font-size="13" fill="#1c7ed6">Dog（子类）</text>
+    <rect x="180" y="120" width="140" height="50" rx="10" fill="#e7f5ff" stroke="#1c7ed6"/>
+    <text x="196" y="150" font-size="13" fill="#1c7ed6">Cat（子类）</text>
+    <rect x="360" y="120" width="140" height="50" rx="10" fill="#e7f5ff" stroke="#1c7ed6"/>
+    <text x="372" y="150" font-size="13" fill="#1c7ed6">Bird（子类）</text>
+    <path d="M190,70 L70,118" stroke="#adb5bd" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+    <path d="M190,70 L250,118" stroke="#adb5bd" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+    <path d="M190,70 L430,118" stroke="#adb5bd" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+  </g>
+
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#adb5bd"/>
+    </marker>
+  </defs>
+
+  <g transform="translate(40,430)">
+    <rect x="0" y="0" width="740" height="60" rx="10" fill="#f1f3f5" stroke="#ced4da"/>
+    <text x="16" y="28" font-size="14" fill="#495057">__init__ 是"构造函数"，创建对象时自动运行；self 指"当前这个对象自己"。</text>
+    <text x="16" y="50" font-size="14" fill="#495057">面向对象不是必须，但项目变大后，它能让代码更有条理、更易维护。</text>
+  </g>
+</svg>

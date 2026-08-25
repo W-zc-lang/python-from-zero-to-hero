@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 500" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="820" height="500" fill="#f8fafc"/>
+  <text x="40" y="50" font-size="26" font-weight="800" fill="#1d3b5a">第 14 章 · 自动化：把重复劳动交给 Python</text>
+  <text x="40" y="80" font-size="14" fill="#555">凡是"反复做、规则明确"的事，都能用脚本一键完成，省时又不出错。</text>
+
+  <!-- 四大场景卡片 -->
+  <g font-size="13">
+    <g transform="translate(40,110)">
+      <rect x="0" y="0" width="355" height="96" rx="12" fill="#e7f5ff" stroke="#a5d8ff"/>
+      <text x="16" y="28" font-size="15" font-weight="800" fill="#1c7ed6">📁 文件与目录</text>
+      <text x="16" y="54" fill="#495057">os / shutil / pathlib：批量重命名、</text>
+      <text x="16" y="76" fill="#495057">按类型整理下载文件夹、去重。</text>
+    </g>
+    <g transform="translate(425,110)">
+      <rect x="0" y="0" width="355" height="96" rx="12" fill="#ebfbee" stroke="#b2f2bb"/>
+      <text x="16" y="28" font-size="15" font-weight="800" fill="#2f9e44">📊 表格与报表</text>
+      <text x="16" y="54" fill="#495057">openpyxl：自动读写 Excel、合并</text>
+      <text x="16" y="76" fill="#495057">多个表格、生成日报。</text>
+    </g>
+    <g transform="translate(40,220)">
+      <rect x="0" y="0" width="355" height="96" rx="12" fill="#f3f0ff" stroke="#d0bfff"/>
+      <text x="16" y="28" font-size="15" font-weight="800" fill="#6741d9">✉️ 邮件与通知</text>
+      <text x="16" y="54" fill="#495057">smtplib：定时发送日报、批量提醒、</text>
+      <text x="16" y="76" fill="#495057">异常时自动告警。</text>
+    </g>
+    <g transform="translate(425,220)">
+      <rect x="0" y="0" width="355" height="96" rx="12" fill="#fff4e6" stroke="#ffd8a8"/>
+      <text x="16" y="28" font-size="15" font-weight="800" fill="#e8590c">🤖 浏览器自动化</text>
+      <text x="16" y="54" fill="#495057">Selenium / Playwright：自动登录、</text>
+      <text x="16" y="76" fill="#495057">填表、点击、抓取动态页面。</text>
+    </g>
+  </g>
+
+  <!-- 整理前 vs 整理后 -->
+  <g transform="translate(40,340)">
+    <rect x="0" y="0" width="740" height="128" rx="12" fill="#ffffff" stroke="#dee2e6"/>
+    <text x="16" y="26" font-size="14" font-weight="700" fill="#1d3b5a">实战示例：一键整理"下载"文件夹</text>
+    <text x="16" y="56" font-size="13" fill="#c92a2a">整理前：report.pdf、a.jpg、b.png、data.xlsx、movie.mp4 全堆在一起</text>
+    <text x="16" y="84" font-size="13" fill="#2f9e44">整理后：📂 图片/  a.jpg b.png  ·  📂 文档/  report.pdf data.xlsx  ·  📂 视频/  movie.mp4</text>
+    <text x="16" y="112" font-size="13" fill="#495057">核心套路：遍历目录 → 按扩展名分类 → shutil.move 到对应子文件夹，几十个文件 1 秒归位。</text>
+  </g>
+</svg>

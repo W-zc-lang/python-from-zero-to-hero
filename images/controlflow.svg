@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 500" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="820" height="500" fill="#f8fafc"/>
+  <text x="40" y="50" font-size="26" font-weight="800" fill="#1d3b5a">第 6 章 · 控制流：让程序会"思考"与"重复"</text>
+
+  <!-- if 流程图 -->
+  <g transform="translate(40,90)">
+    <text x="0" y="0" font-size="16" font-weight="700" fill="#3776ab">① 条件判断 if / elif / else</text>
+    <rect x="60" y="20" width="160" height="44" rx="22" fill="#ffffff" stroke="#3776ab"/>
+    <text x="80" y="47" font-size="13" fill="#1d3b5a">条件成立?</text>
+    <rect x="0" y="100" width="130" height="40" rx="8" fill="#d3f9d8" stroke="#69db7c"/>
+    <text x="14" y="125" font-size="12" fill="#2b8a3e">是 → 代码块A</text>
+    <rect x="230" y="100" width="130" height="40" rx="8" fill="#ffe3e3" stroke="#ffa8a8"/>
+    <text x="244" y="125" font-size="12" fill="#c92a2a">否 → 代码块B</text>
+    <path d="M140,64 L140,100" stroke="#adb5bd" stroke-width="2" marker-end="url(#ar)"/>
+    <path d="M220,64 L295,64 L295,100" stroke="#adb5bd" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+    <rect x="0" y="160" width="360" height="90" rx="10" fill="#1e1e1e"/>
+    <text x="14" y="186" font-family="Consolas,monospace" font-size="12" fill="#9cdcfe">if score &gt;= 90:</text>
+    <text x="38" y="206" font-family="Consolas,monospace" font-size="12" fill="#ce9178">print("优秀")</text>
+    <text x="14" y="230" font-family="Consolas,monospace" font-size="12" fill="#9cdcfe">elif score &gt;= 60:</text>
+    <text x="38" y="244" font-family="Consolas,monospace" font-size="12" fill="#ce9178">print("及格")</text>
+  </g>
+
+  <!-- for / while -->
+  <g transform="translate(420,90)">
+    <text x="0" y="0" font-size="16" font-weight="700" fill="#3776ab">② 循环：for 与 while</text>
+    <rect x="0" y="20" width="360" height="70" rx="10" fill="#1e1e1e"/>
+    <text x="14" y="46" font-family="Consolas,monospace" font-size="12" fill="#9cdcfe">for i in range(5):   # 已知次数</text>
+    <text x="38" y="66" font-family="Consolas,monospace" font-size="12" fill="#ce9178">print(i)</text>
+    <text x="14" y="86" font-size="12" fill="#6a9955"># range(5) → 0,1,2,3,4</text>
+
+    <rect x="0" y="104" width="360" height="70" rx="10" fill="#1e1e1e"/>
+    <text x="14" y="130" font-family="Consolas,monospace" font-size="12" fill="#9cdcfe">while n &gt; 0:        # 条件成立就继续</text>
+    <text x="38" y="150" font-family="Consolas,monospace" font-size="12" fill="#ce9178">n -= 1</text>
+
+    <rect x="0" y="190" width="360" height="64" rx="10" fill="#fff9db" stroke="#ffe066"/>
+    <text x="14" y="214" font-size="13" font-weight="700" fill="#e67700">break / continue</text>
+    <text x="14" y="236" font-size="12" fill="#664d03">break 立即退出循环；continue 跳过本次余下代码。</text>
+  </g>
+
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#adb5bd"/>
+    </marker>
+  </defs>
+
+  <!-- 对比卡 -->
+  <g transform="translate(40,360)">
+    <rect x="0" y="0" width="360" height="110" rx="12" fill="#ffffff" stroke="#dee2e6"/>
+    <text x="16" y="26" font-size="14" font-weight="700" fill="#1d3b5a">for 循环</text>
+    <text x="16" y="50" font-size="13" fill="#495057">· 遍历序列（列表/字符串/范围）</text>
+    <text x="16" y="72" font-size="13" fill="#495057">· 次数通常已知</text>
+    <text x="16" y="94" font-size="13" fill="#495057">· 写法简洁，首选</text>
+    <rect x="380" y="0" width="360" height="110" rx="12" fill="#ffffff" stroke="#dee2e6"/>
+    <text x="396" y="26" font-size="14" font-weight="700" fill="#1d3b5a">while 循环</text>
+    <text x="396" y="50" font-size="13" fill="#495057">· 只要条件为真就执行</text>
+    <text x="396" y="72" font-size="13" fill="#495057">· 次数常未知（如"直到用户输入q"）</text>
+    <text x="396" y="94" font-size="13" fill="#495057">· 注意设好退出条件，防死循环</text>
+  </g>
+</svg>
