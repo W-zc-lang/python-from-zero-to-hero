@@ -1,39 +1,25 @@
+# 🐍 Python: From Zero to Hero
+
+> 一份循序渐进、零基础友好的 **Python 系统教程**：15 章 + 附录 + 20 张 SVG 图解，每节「中文讲解 + 英文对照」。**本仓库 README 即全文**（约 97KB），目录见下方。
+
 ![Python](https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white)
 ![Chapters](https://img.shields.io/badge/Chapters-15-4CAF50)
 ![Diagrams](https://img.shields.io/badge/Diagrams-20-FF9800)
 ![License](https://img.shields.io/badge/License-CC%20BY%204.0-blue)
 
-> 一份循序渐进、零基础友好的 Python 系统教程，每一节均为「中文讲解 + 英文对照」。
-> A step-by-step, beginner-friendly systematic Python tutorial — every section is "Chinese explanation + English translation".
+## ✨ 特色
 
-> 本仓库（README）即全文。目录见下方，点击可跳转到对应章节。
-> This repository's README **is** the full text. See the table of contents below; click to jump to each chapter.
+- **零基础友好**：从安装到进阶，一步一脚印
+- **中英双语**：每节中文讲解配英文对照，适合对照学习
+- **图解丰富**：20 张 SVG 图帮你看懂抽象概念
+- **免费开源**：CC BY 4.0，可自由分享
 
-> 📦 想按章节阅读或离线收藏？完整教程（15 章 + 附录 + 20 张配图）已打包发布在 **[Releases](https://github.com/W-zc-lang/python-from-zero-to-hero/releases)**，可一键下载。
-> 📦 Prefer reading by chapter or offline? The complete tutorial (15 chapters + appendix + 20 diagrams) is packaged in **[Releases](https://github.com/W-zc-lang/python-from-zero-to-hero/releases)** — download it there.
+## 📖 阅读
 
-> 📄 需要 **WPS / Word 文档版**？已生成 **`Python从入门到精通.docx`**（保留全部标题层级、中英双语段落、代码块底纹与 20 张配图），放在 `tutorial/` 目录，并随 Releases 提供下载。用 WPS 双击即可打开。
-> 📄 Need a **WPS / Word document**? A **`Python从入门到精通.docx`** is ready (full heading levels, bilingual paragraphs, shaded code blocks, 20 diagrams) in the `tutorial/` folder and in the Releases download. Open it in WPS with a double-click.
-
-# Python 从入门到精通
-
-**Python: From Beginner to Master**
-
-> 一份写给初学者的、循序渐进的系统学习指南
->
-> 覆盖：基础语法 · 数据类型 · 控制流 · 函数 · 面向对象 · 模块与包 · 文件操作 · 异常处理 · 常用标准库 · 网络爬虫 · 自动化办公
->
-> 适合人群：零基础或有一点编程经验、希望系统掌握 Python 的读者。
-
-> A step-by-step, systematic learning guide written for beginners
->
-> Covering: basic syntax · data types · control flow · functions · object-oriented programming · modules and packages · file operations · exception handling · common standard libraries · web scraping · office automation
->
-> Who it's for: readers with no prior experience, or a little programming background, who want to master Python systematically.
-
-![封面](images/cover.svg)
+👉 直接在下方目录点击章节跳转；或 **[⭐ Star 收藏](https://github.com/W-zc-lang/python-from-zero-to-hero)** 方便回看。
 
 ---
+
 
 ## 目录
 
